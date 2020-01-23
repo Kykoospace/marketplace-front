@@ -1,1 +1,11 @@
 <p-menubar [model]="menuItems"></p-menubar>
+
+<form [formGroup]="createPropertyForm">
+  <input type="text" formControlName="name" pInputText>
+  <input type="number" formControlName="price" pInputText>
+  <input type="text" formControlName="address" pInputText>
+  <button type="submit" (click)="test()">Créer</button>
+</form>
+
+<button (click)="getPropertiesByOwner()">Check Properties</button>
+<button (click)="getAllProperties()">Check All Properties</button>
