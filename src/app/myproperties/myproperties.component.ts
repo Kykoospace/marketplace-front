@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {ContractService} from "../Shared/contract.service";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-myproperties',
+  templateUrl: './myproperties.component.html',
+  styleUrls: ['./myproperties.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class MypropertiesComponent implements OnInit {
 
   private properties: any;
 
@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.contractService.getAllProperties()
+    this.contractService.getPropertiesByOwner()
       .then((properties) => {
         this.properties = properties;
       })

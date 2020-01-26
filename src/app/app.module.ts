@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import {MenubarModule} from "primeng";
 import {ReactiveFormsModule} from "@angular/forms";
+import { CreateComponent } from './create/create.component';
+import { MypropertiesComponent } from './myproperties/myproperties.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CreateComponent,
+    MypropertiesComponent
   ],
   imports: [
     BrowserModule,

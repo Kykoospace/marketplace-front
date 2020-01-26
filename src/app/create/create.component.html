@@ -1,0 +1,6 @@
+<form [formGroup]="createPropertyForm">
+  <input type="text" formControlName="name" pInputText>
+  <input type="number" formControlName="price" pInputText>
+  <input type="text" formControlName="address" pInputText>
+  <button type="submit" (click)="createProperty()">Créer</button>
+</form>
